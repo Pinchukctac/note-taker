@@ -2,6 +2,7 @@
 const express = require("express");
 const path = require("path");
 const fs = require("fs");
+const { uuid } = require('uuidv4');
 
 // tells node that we are creating an "express" server
 const app = express();
@@ -35,7 +36,7 @@ app.get("/api/notes", function(req, res) {
 // API POST request, Receive a new note, append it to the db.json file, and return the note
 app.post("/api/notes", function(req, res) {
   let note = (req.body)
-  let id = uuidv4(); 
+  let id = uuid(); 
   note.id = id
   let notesArray;
   let savedNotes = fs.readFileSync("./db/db.json","utf-8");
