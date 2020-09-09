@@ -16,9 +16,4 @@ The user provides a note title and then the text of their note. To save, they cl
 
 ## LINK
 
-The user provides a note title and then the text of their note. To save, they click on the save icon. The user can then click on the "trashcan" icon to delete a previously saved note.
-
-
-
-
-
+Heroku Link: https://secure-basin-91628.herokuapp.com/
